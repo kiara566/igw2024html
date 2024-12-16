@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto Zodiaco</title>
+    <!-- Vincular el archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER: Encabezado de la página -->
+    <header>
+        <h1>Contáctanos sobre tu signo zodiacal</h1>
+        <p>¿Quieres saber más sobre Aries u otro signo? ¡Envíanos tus preguntas!</p>
+    </header>
+
+    <!-- NAV: Barra de navegación -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#formulario">Formulario de contacto</a>
+        <a href="#informacion">Más información</a>
+    </nav>
+
+    <!-- SECTION: Formulario de contacto -->
+    <section id="formulario">
+        <h2>Formulario de Contacto</h2>
+        <!-- Formulario diseñado con una cuadrícula para organización -->
+        <form action="#" method="post" class="grid-container">
+            <!-- Campo para el nombre del usuario -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre">
+
+            <!-- Campo para el correo electrónico del usuario -->
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required placeholder="Ingresa tu correo">
+
+            <!-- Campo desplegable para seleccionar el signo zodiacal -->
+            <label for="signo">Tu signo zodiacal:</label>
+            <select id="signo" name="signo" required>
+                <option value="aries">Aries</option>
+                <option value="tauro">Tauro</option>
+                <option value="geminis">Géminis</option>
+                <option value="cancer">Cáncer</option>
+                <option value="leo">Leo</option>
+                <option value="virgo">Virgo</option>
+                <option value="libra">Libra</option>
+                <option value="escorpio">Escorpio</option>
+                <option value="sagitario">Sagitario</option>
+                <option value="capricornio">Capricornio</option>
+                <option value="acuario">Acuario</option>
+                <option value="piscis">Piscis</option>
+            </select>
+
+            <!-- Campo para que el usuario escriba su mensaje o consulta -->
+            <label for="mensaje">Tu mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu consulta aquí..."></textarea>
+
+            <!-- Botón para enviar el formulario -->
+            <button type="submit" class="button">Enviar</button>
+        </form>
+    </section>
+
+    <!-- SECTION: Más información sobre los signos zodiacales -->
+    <section id="informacion">
+        <h2>Conoce más sobre el zodiaco</h2>
+        <div class="grid-container">
+            <!-- Artículo sobre los signos de fuego -->
+            <article>
+                <h3>Signos de fuego</h3>
+                <p>Los signos de fuego (Aries, Leo, Sagitario) son conocidos por su pasión, energía y entusiasmo.</p>
+                <!-- Imagen representativa de los signos de fuego -->
+                <img src="https://via.placeholder.com/300" alt="Signos de fuego" class="responsive">
+            </article>
+            <!-- Artículo sobre los signos de agua -->
+            <article>
+                <h3>Signos de agua</h3>
+                <p>Los signos de agua (Cáncer, Escorpio, Piscis) destacan por su sensibilidad y emociones profundas.</p>
+                <!-- Video explicativo sobre los signos de agua -->
+                <video controls class="responsive">
+                    <source src="https://www.example.com/agua.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de este video.
+                </video>
+            </article>
+        </div>
+    </section>
+
+    <!-- FOOTER: Pie de página con información de contacto -->
+    <footer>
+        <p>© 2024 - Página creada para explorar los signos zodiacales. Escríbenos si tienes dudas.</p>
+    </footer>
+</body>
+</html>
